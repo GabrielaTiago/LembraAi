@@ -7,8 +7,8 @@
   "scripts": {
     "build": "npm run build:rm-old-version && tsc",
     "build:rm-old-version": "rm -r build",
-    "dev": "tsx watch src/index.ts",
-    "start": "node build/index.js",
+    "dev": "ENV=dev tsx watch src/index.ts",
+    "start": "ENV=prod node build/index.js",
     "start:docker": "docker compose up"
   },
   "keywords": [],
