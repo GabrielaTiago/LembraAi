@@ -9,7 +9,10 @@
     "build:rm-old-version": "rm -r build",
     "dev": "ENV=dev tsx watch src/index.ts",
     "start": "ENV=prod node build/index.js",
-    "start:docker": "docker compose up"
+    "start:docker": "docker compose up",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "keywords": [],
   "author": "",

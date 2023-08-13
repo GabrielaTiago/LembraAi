@@ -10,5 +10,6 @@
         "noImplicitAny": true,
         "esModuleInterop": true,
         "resolveJsonModule": true
-    }
+    },
+    "exclude": ["vitest.config.ts", "src/**/*.test.ts", "src/**/*.spec.ts"]
 }
